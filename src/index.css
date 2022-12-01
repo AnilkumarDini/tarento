@@ -1,13 +1,302 @@
-body {
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
+@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy");
+body{
+  min-height: 100vh;
+  font-family: "Raleway", sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background-color: #F7FFF7;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* sign in component */
+*,*:before,*::after{
+  box-sizing: border-box;
+}
+.signin{
+  position: absolute;
+  width: 100%;
+  height:100%; 
+  overflow: hidden;
+}
+.signin:hover .top:before, .signin:hover .top:after, .signin:hover .bottom:before, .signin:hover .bottom:after, .signin:active .top:before, .signin:active .top:after, .signin:active .bottom:before, .signin:active .bottom:after {
+  margin-left: 200px;
+  transform-origin: -200px 50%;
+  transition-delay: 0s;
+}
+.signin:hover .center, .signin:active .center {
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+.top:before, .top:after, .bottom:before, .bottom:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 200vmax;
+  height: 200vmax;
+  top: 50%;
+  left: 50%;
+  margin-top: -100vmax;
+  transform-origin: 0 50%;
+  transition: all 0.5s cubic-bezier(0.445, 0.05, 0, 1);
+  z-index: 10;
+  opacity: .85;
+  transition-delay: 0.2s;
+}
+
+.top:before {
+  transform: rotate(45deg);
+  background: #fb5607;
+}
+.top:after {
+  transform: rotate(135deg);
+  background: #8338ec;
+}
+
+.bottom:before {
+  transform: rotate(-45deg);
+  background: #ffbe0b;
+}
+.bottom:after {
+  transform: rotate(-135deg);
+  background: #ff006e;
+}
+
+.center {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  margin-left: -200px;
+  margin-top: -200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  opacity: 0;
+  transition: all 0.5s cubic-bezier(0.445, 0.05, 0, 1);
+  transition-delay: 0s;
+  color: #000;
+}
+.center input{
+  width: 100%;
+  padding: 15px;
+  margin: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+}
+
+button{
+  padding: 10px;
+  margin: 10px;
+  border-radius: 15px;
+  cursor :pointer;
+  background-color: #F7FFF7;
+  color: #a4c3b2;
+  font-size: 15px;
+  font-weight:normal;
+  transition: all 0.5s;
+  display: inline-block;
+}
+
+.sign_in:hover{
+  background-color:#4f772d;
+  color: #F8FFE5;
+
+} 
+.create_account:hover{
+  background-color: #4f772d;
+  color: #F8FFE5;
+}
+.create_account span{
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.create_account span:after{
+  content:'\00bb';
+  position:absolute;
+  top:0;
+  opacity:0;
+  right:-20px;
+  transition: 0.5s;
+
+}
+.create_account:hover span{
+  padding-right: 25px;
+  
+}
+.create_account:hover span:after{
+  right:0;
+  opacity: 1;
+}
+
+/* Navbar component */
+.Navbar{
+  margin: 0;
+}
+.nav_list{
+  display: flex;
+  float: right;
+  list-style: none;
+  background-color: #2b9348;
+  padding-bottom: 0px;
+  padding-left: 1320px;
+  margin: 0;
+  width: 100%;
+}
+li{
+   font-size: 16px;
+   font-weight: normal;
+   /* font-variant: small-caps; */
+   /* text-transform: uppercase; */
+   padding: 10px;
+   float: right;
+
+}
+li:hover{
+  background-color: #80b918;
+}
+/* home component and addtasks component */
+.addtasks{
+  /*width: 480px;
+  height: 700px;
+  top: 50%;
+  left: 50%;
+  margin-left: 400px;
+  margin-top: -19px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  padding-top: 0;
+  background-color: #513b56; 
+*/
+max-width: 500px;
+margin: 120px auto;
+overflow: auto;
+min-height: 300px;
+border: 3px double #003249;
+padding: 30px;
+border-radius: 5px;
+
+} 
+.addtasks h2{
+  color: #80b918;
+  margin: 50px;
+  font-size: 40px;
+}
+.addtasks input{
+  width: 100%;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-family: "Raleway", sans-serif;
+  color: rgb(114, 109, 109);
+}
+.add_btn1{
+  background-color: #606c38;
+  color: #F8FFE5;
+}
+.add_btn2{
+  background-color: #80b918;
+  color: #F8FFE5;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  display: flex;
+}
+.add_btn2:hover{
+  background-color: #4f772d;
+}
+.add_btn1:hover{
+  background-color: #283618;
+}
+body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  overflow: hidden;
+  font-family: "Luckiest Guy", cursive;
+  -webkit-font-smoothing: antialiased;
+}
+::selection {
+  background: transparent;
+}
+body:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  margin: auto;
+  border-radius: 100%;
+  background: transparent;
+  display: block;
+}
+h1 {
+  cursor: default;
+  position: absolute;
+  top: -50px;
+  left: 10px;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+
+h1 span {
+  position: relative;
+  top: -80px;
+  display: inline-block;
+  font-size: 100px;
+  color: #eeef20;
+  text-shadow: 0 1px 0 #dddf00, 0 2px 0 #dddf00, 0 3px 0 #dddf00, 0 4px 0 #dddf00,
+    0 5px 0 #dddf00, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent,
+    0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+.home_content{
+ text-align: center;
+ margin-top: 0;
+ padding-top: 400px;
+ justify-content: center;
+ align-items: center;
+ font-family:'Courier New', Courier, monospace;
+ font-weight: bold;
+ 
+}
+.footer{
+  background-color: #202020;
+  text-align: center;
+  color: #F8FFE5;
+  padding: 8px;
+  margin: 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-family: 'Courier New', Courier, monospace;
+
+} 
+/* Task component */
+.task_card{
+  border-radius: 3px;
+  box-shadow: #000;
+  box-sizing: content-box;
 }

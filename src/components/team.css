@@ -1,0 +1,41 @@
+.card_content_team{
+	background-color: #fbf4f8;
+	box-shadow: 10px 15px 20px rgba(48, 49, 44, 0.356);
+    padding: 15px;
+    margin-bottom: 30px;
+    position: relative;
+    display:flex;
+    top: 25px;
+    width: 500px;
+    border-radius: 10px;
+    text-align: right;
+    float:inline-start;
+    margin:25px;
+
+}
+.name_team{
+    padding-top: 30px;
+    
+}
+.card_bottom_team{
+    text-align: right;
+    color: #000;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 100px;
+    font-size: large;
+}
+.task_content_team li{
+    font-size: 45px;
+    text-align: left;
+    bottom: 300px;
+    left: 0px;
+    list-style: none;
+
+
+}
+li:hover{
+    background-color:#fbf4f8;
+    color: #000;
+    cursor:default;
+}

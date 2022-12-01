@@ -18,6 +18,11 @@
 .env.test.local
 .env.production.local
 
+#files
+/src/components/LBoard.js
+/src/components/Progress.js
+
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*

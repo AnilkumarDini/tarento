@@ -1,0 +1,35 @@
+.card_content{
+	background-color: #fbf4f8;
+	box-shadow: 10px 15px 20px rgba(48, 49, 44, 0.356);
+    padding: 15px;
+    margin-bottom: 30px;
+    position: relative;
+    display:flex;
+    top: 25px;
+    width: 500px;
+    border-radius: 10px;
+    margin-left: 100px;
+    float: right;
+    text-align: right;
+
+}
+.name{
+    color:#283618;
+    padding-top: 30px;
+    font-size: 25px;
+    
+}
+.card_bottom{
+    text-align: right;
+    color: #202020;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 150px;
+    font-size: large;
+}
+.task_content h1{
+    font-size: 45px;
+    text-align: left;
+    bottom: 300px;
+    left: 50px;
+}
