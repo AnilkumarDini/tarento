@@ -1,5 +1,5 @@
 {
-  "homepage":"http://AnilkumarDini.github.io/Task_Tracker_project ",
+  "homepage": "http://AnilkumarDini.github.io/Task_Tracker_project ",
   "name": "task_tracker",
   "version": "0.1.0",
   "private": true,
@@ -16,12 +16,12 @@
   },
   "scripts": {
     "start": "react-scripts start --openssl-legacyprovider",
-    "predeploy":"npm run build",
-    "deply":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deply": "gh-pages -d build",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "eject": "react-scripts eject",
-    "deploy":"serve -s build"
+    "deploy": "serve -s build"
   },
   "eslintConfig": {
     "extends": [
@@ -42,6 +42,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "react-router-dom": "^6.4.3"
   }
 }
