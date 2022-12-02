@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Task_Tracker_project%20/static/css/main.18767c14.css",
-    "main.js": "/Task_Tracker_project%20/static/js/main.3e356d76.js",
-    "static/media/Mavericks.jpg": "/Task_Tracker_project%20/static/media/Mavericks.9b3e19601559b34a976b.jpg",
-    "static/media/Paratroopers.jpeg": "/Task_Tracker_project%20/static/media/Paratroopers.8ca7fc8af439c670b1bf.jpeg",
-    "static/media/Nullbyte.jpg": "/Task_Tracker_project%20/static/media/Nullbyte.882dc69bbf71959fd73f.jpg",
-    "static/media/Rubikscube.jpg": "/Task_Tracker_project%20/static/media/Rubikscube.6f79cfed1d923b12b0d6.jpg",
-    "index.html": "/Task_Tracker_project%20/index.html",
-    "main.18767c14.css.map": "/Task_Tracker_project%20/static/css/main.18767c14.css.map",
-    "main.3e356d76.js.map": "/Task_Tracker_project%20/static/js/main.3e356d76.js.map"
+    "main.css": "/tarento/static/css/main.18767c14.css",
+    "main.js": "/tarento/static/js/main.1b6323db.js",
+    "static/media/Mavericks.jpg": "/tarento/static/media/Mavericks.9b3e19601559b34a976b.jpg",
+    "static/media/Paratroopers.jpeg": "/tarento/static/media/Paratroopers.8ca7fc8af439c670b1bf.jpeg",
+    "static/media/Nullbyte.jpg": "/tarento/static/media/Nullbyte.882dc69bbf71959fd73f.jpg",
+    "static/media/Rubikscube.jpg": "/tarento/static/media/Rubikscube.6f79cfed1d923b12b0d6.jpg",
+    "index.html": "/tarento/index.html",
+    "main.18767c14.css.map": "/tarento/static/css/main.18767c14.css.map",
+    "main.1b6323db.js.map": "/tarento/static/js/main.1b6323db.js.map"
   },
   "entrypoints": [
     "static/css/main.18767c14.css",
-    "static/js/main.3e356d76.js"
+    "static/js/main.1b6323db.js"
   ]
 }
